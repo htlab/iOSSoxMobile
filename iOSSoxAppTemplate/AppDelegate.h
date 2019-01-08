@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SoxFramework.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    SoxConnection *soxConnection;
+}
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong,nonatomic) SoxConnection *soxConnection;
 
 @end
 
